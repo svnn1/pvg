@@ -1,0 +1,161 @@
+// ==========================================================================
+// SvN variables
+// ==========================================================================
+
+// 99. Globals
+$cursor-pointer: pointer !default;
+$cursor-disabled: not-allowed !default;
+$em-size: 16 !default;
+$gutter: 1.875rem !default;
+$spacer: 1rem !default;
+$paragraph-margin: 0 0 1em !default;
+
+// 00. Grid
+$grid-sm-width: (576 / 16) * 1rem !default;
+$grid-md-width: (768 / 16) * 1rem !default;
+$grid-lg-width: (992 / 16) * 1rem !default;
+$grid-sm-max-container: (576 / 16) * 1rem !default;
+$grid-md-max-container: (768 / 16) * 1rem !default;
+$grid-lg-max-container: (992 / 16) * 1rem !default;
+$grid-xlg-max-container: (1200 / 16) * 1rem !default;
+$grid-sm-min-container: (540 / 16) * 1rem !default;
+$grid-md-min-container: (720 / 16) * 1rem !default;
+$grid-lg-min-container: (960 / 16) * 1rem !default;
+$grid-xlg-min-container: (1140 / 16) * 1rem !default;
+
+$grid-column-padding: (10 / 16) * 1rem !default;
+
+// 01. Colors
+$primary-color: $blue-500 !default;
+$success-color: #22bb33 !default;
+$info-color: #5bc0de !default;
+$warning-color: #f0ad4e !default;
+$danger-color: $red-500 !default;
+$accent-color: $pink-A200 !default;
+$link-color: rgb(3, 155, 229) !default;
+
+// 02. Fonts
+$font-open-sans-path: "../fonts/open-sans" !default;
+$font-open-sans: "OpenSans" !default;
+
+// 03. Buttons
+$button-font-size-default: 14 !default;
+$button-font-size: ($button-font-size-default / 16) * 1rem !default;
+$button-transition: all .2s ease-in-out !default;
+$button-margin: (6 / $button-font-size-default) * 1em !default;
+$button-margin-left: (8 / $button-font-size-default) * 1em !default; //
+$button-margin-right: (8 / $button-font-size-default) * 1em !default; //
+$button-padding: 0 ((26 / $button-font-size-default) * 1em) !default;
+$button-height: 2.572em !default;
+$button-line-height: 2.6 !default;
+$button-box-shadow: 0 0 0.143em rgba(0, 0, 0, 0.12), 0 0.143em 0.143em rgba(0, 0, 0, 0.20) !default;
+$button-box-shadow-active: 0 0 0.286em rgba(0, 0, 0, 0.12), 0.071em 0.214em 0.286em rgba(0, 0, 0, 0.20) !default;
+
+// 04. Container
+$container-gutter: ($gutter / 2) !default;
+$row-gutter: ($gutter / -2) !default;
+
+// 05. Form
+$input-font-size-default: 14 !default;
+
+$input-label-color: rgb(102, 117, 127) !default;
+$input-label-font-size: 0.8em !default;
+$input-label-font-weight: bold !default;
+$input-label-margin: 0 0 4px 0 !default;
+$input-label-text-transform: none !default;
+
+$input-background: $white !default;
+$input-border: 1px solid rgba(34, 36, 38, 0.15) !default;
+$input-border-radius: 0.28571429rem !default;
+$input-box-shadow: 0 0 0 0 transparent inset;
+$input-color: rgba(0, 0, 0, 0.87) !default;
+$input-focus-background: $white !default;
+$input-focus-border-color: rgb(133, 183, 217) !default;
+$input-focus-border-radius: 0.28571429rem !default;
+$input-focus-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.35) inset !default;
+$input-focus-color: rgba(0, 0, 0, 0.95) !default;
+$input-font-size: ($input-font-size-default / 16) * 1rem !default;
+$input-line-height: 1.2857 !default;
+$input-padding: ((9 / $input-font-size-default) * 1em) ((8 / $input-font-size-default) * 1em) !default;
+$input-place-holder-color: rgba(191, 191, 191, 0.87) !default;
+$input-place-holder-focus-color: rgba(115, 115, 115, 0.87) !default;
+$input-transition: color 0.1s ease, border-color 0.1s ease !default;
+
+$text-area-height: 12em !default;
+$text-area-max-height: 24em !default;
+$text-area-min-height: 8em !default;
+$text-area-resize: vertical !default;
+
+$checkbox-vertical-align: top !default;
+
+// 06. Table
+$table-cell-padding: .3rem !default;
+$table-border-color: #ECEEEF !default;
+$table-border-width: 1px !default;
+
+// 07. Label
+$label-font-size-default: 12 !default;
+$label-vertical-align: baseline !default;
+$label-vertical-margin: 0em !default;
+$label-horizontal-margin: (2 / $label-font-size-default) * 1em !default;
+$label-background-color: #E8E8E8 !default;
+$label-vertical-padding: 0.5833em !default;
+$label-horizontal-padding: 0.833em !default;
+$label-border-radius: (4 / $label-font-size-default) * 1em !default;
+$label-color: rgba(0, 0, 0, 0.6) !default;
+$label-font-size: ($label-font-size-default / 16) * 1rem !default;
+$label-font-weight: bold !default;
+$label-transition: background .1s ease !default;
+
+// 08. Tags
+$tag-font-size-default: 12 !default;
+$tag-horizontal-padding: (18 / $tag-font-size-default) * 1em !default;
+$tag-font-size: ($tag-font-size-default / 16) * 1rem !default;
+$tag-font-weight: bold !default;
+$tag-border-radius: (4 / $tag-font-size-default) * 1em !default;
+$tag-height: (18 / $tag-font-size-default) * 1em !default;
+$tag-width: (18 / $tag-font-size-default) * 1em !default;
+$tag-circle-size: (6 / $tag-font-size-default) * 1em !default;
+$tag-circle-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3) !default;
+$tag-background-color: #E8E8E8 !default;
+
+// 09. Image
+$image-vertical-align: middle !default;
+$image-rounded: (4 / 16) * 1rem !default;
+$image-circular: 50% !default;
+
+// 10. Breadcrumb
+$breadcrumb-vertical-align: middle !default;
+$breadcrumb-background-color: #EDEFF0 !default;
+$breadcrumb-color: #2C3F4C !default;
+
+// 11. Card
+$card-border-radius: (4 / 16) * 1rem !default;
+$card-display: flex !default;
+$card-margin: ((12 / 16) * 1rem) 0em !default;
+$card-box-shadow: 0 1px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5 !default;
+$card-transition: box-shadow .1s ease, transform .1s ease !default;
+$card-width: 18.13rem !default;
+
+$card-content-divider: 1px solid rgba(34, 36, 38, 0.1) !default;
+$card-content-padding: ((14 / 16) * 1rem) ((14 / 16) * 1rem) !default;
+$card-content-font-size: (14 / 16) * 1rem !default;
+
+$card-content-header-font-size: (18 / 16) * 1rem !default;
+$card-content-header-margin-top: -(4 / 16) * 1rem !default;
+$card-content-header-line-height: (23 / 16) * 1rem !default;
+
+$card-content-description-distance: (7 / 16) * 1rem !default;
+
+$card-meta-font-size: (14 / 16) * 1rem !default;
+
+// 12. Navigation
+$navigation-height: 3.125rem !default;
+$navigation-background: $white !default;
+$navigation-toggle-background: #4A4A4A !default;
+$navigation-toggle-background-hover: $green-100 !default;
+$navigation-toggle-height: 3.125rem !default;
+$navigation-toggle-width: 3.125rem !default;
+
+$navigation-link-color: #7A7A7A !default;
+$navigation-link-color-hover: #363636 !default;

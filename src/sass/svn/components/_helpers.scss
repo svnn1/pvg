@@ -1,0 +1,47 @@
+._left {
+	float: left;
+}
+
+._right {
+	float: right;
+}
+
+._start {
+	align-self: flex-start;
+}
+
+._end {
+	align-self: flex-end;
+}
+
+._center {
+	align-self: center;
+}
+
+._baseline {
+	align-self: baseline;
+}
+
+._stretch {
+	align-self: stretch;
+}
+
+._text-center {
+	text-align: center;
+}
+
+._primary {
+	@include make-background($primary-color);
+}
+
+._danger {
+	@include make-background($danger-color);
+}
+
+._accent {
+	@include make-background($accent-color);
+}
+
+._no-padding-bottom {
+	padding-bottom: 0;
+}

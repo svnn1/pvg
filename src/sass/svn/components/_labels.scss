@@ -1,0 +1,50 @@
+.label {
+	display: inline-flex;
+
+	margin-bottom: .3125rem;
+	padding: $label-vertical-padding $label-horizontal-padding;
+
+	transition: $label-transition;
+	vertical-align: $label-vertical-align;
+	text-transform: none;
+
+	color: $label-color;
+	border: 0 solid transparent;
+	border-radius: $label-border-radius;
+	background-color: $label-background-color;
+	background-image: none;
+
+	font-size: $label-font-size;
+	font-weight: $label-font-weight;
+	line-height: 1;
+
+	&:first-child {
+		margin-left: 0em;
+	}
+	&:last-child {
+		margin-right: 0em;
+	}
+
+	&:hover {
+		background-color: saturate(darken($label-background-color, 5), 10);
+	}
+
+	&:disabled {
+		cursor: $cursor-disabled;
+		pointer-events: none;
+
+		opacity: 0.60;
+		box-shadow: none;
+	}
+
+	> a {
+		transition: .1s opacity ease;
+
+		opacity: 0.5;
+		color: $label-color;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

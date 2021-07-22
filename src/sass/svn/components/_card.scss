@@ -1,0 +1,190 @@
+.card {
+	position: relative;
+	z-index: '';
+
+	display: $card-display;
+	flex-direction: column;
+
+	width: $card-width;
+	max-width: 100%;
+	min-height: 1px;
+	margin: $card-margin;
+	padding: 0;
+
+	transition: $card-transition;
+
+	border: none;
+	border-radius: .28571429rem;
+	background: $white;
+	box-shadow: $card-box-shadow;
+
+	@include clearfix;
+
+	&:hover {
+		z-index: 5;
+
+		cursor: pointer;
+		transform: translateY(-3px);
+
+		border: none;
+		background: #FFF;
+		box-shadow: 0 1px 3px 0 #BCBDBD,0 0 0 1px #D4D4D5;
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	& a {
+		cursor: pointer;
+	}
+
+	> :first-child {
+		border-top: none;
+		border-radius: $card-border-radius $card-border-radius 0 0;
+	}
+
+	> :last-child {
+		border-bottom: none;
+		border-radius: 0 0 $card-border-radius $card-border-radius;
+	}
+
+	> :only-child {
+		border-radius: $card-border-radius;
+	}
+
+	> .card-image {
+		position: relative;
+
+		display: block;
+
+		padding: 0;
+
+		background: $white;
+
+		flex: 0 0 auto;
+		> img {
+			display: block;
+
+			width: 100%;
+			height: auto;
+
+			border-radius: inherit;
+		}
+	}
+
+	> .card-content {
+		margin: 0;
+		padding: $card-content-padding;
+
+		border: none;
+		border-top: $card-content-divider;
+		border-radius: 0;
+		background: none;
+		box-shadow: none;
+
+		font-size: $card-content-font-size;
+
+		flex-grow: 1;
+		@include clearfix;
+
+		> .header {
+			display: block;
+
+			margin-top: $card-content-header-margin-top;
+
+			color: rgba(0, 0, 0, 0.85);
+
+			font-size: $card-content-header-font-size;
+			font-weight: bold;
+			line-height: $card-content-header-line-height;
+		}
+
+		> .meta + .description {
+			margin-top: $card-content-description-distance;
+		}
+
+		> img {
+			display: inline-block;
+
+			width: 100%;
+		}
+
+		> .description {
+			clear: both;
+
+			color: rgba(0, 0, 0, 0.68);
+		}
+
+		p {
+			margin: 0 0 0.5rem;
+		}
+
+		a {
+			transition: color .1s ease;
+		}
+
+		a.header {
+			color: rgba(0, 0, 0, 0.85);
+
+			&:hover {
+				color: darken(saturate($link-color, 20), 15);
+			}
+		}
+	}
+
+	.meta {
+		color: rgba(0, 0, 0, .4);
+
+		font-size: $card-meta-font-size;
+
+		* {
+			margin-right: (4 / 16) * 1rem;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		> a {
+			color: rgba(0, 0, 0, 0.4);
+
+			&:hover {
+				color: rgba(0, 0, 0, 0.87);
+			}
+		}
+	}
+
+	> .card-footer {
+		position: static;
+		top: 0;
+		left: 0;
+
+		width: auto;
+		max-width: 100%;
+		min-height: 0em;
+		margin: 0;
+		padding: ((10 / 16) * 1rem) ((14 / 16) * 1rem);
+
+		transition: color .1s ease;
+
+		color: rgba(0, 0, 0, 0.4);
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+		background: none;
+		box-shadow: none;
+
+		flex-grow: 0;
+
+		a {
+			color: rgba(0, 0, 0, 0.4);
+
+			&:hover {
+				color: darken(saturate($link-color, 20), 15);
+			}
+		}
+	}
+}

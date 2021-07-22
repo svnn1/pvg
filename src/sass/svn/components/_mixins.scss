@@ -1,0 +1,172 @@
+@mixin make-icon($name, $path, $color: $black) {
+	.icon-#{$name} {
+		background-image: url($path);
+		color: $color;
+	}
+}
+
+@mixin make-background($bg, $color: $white) {
+	color: $color;
+	background-color: $bg;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color;
+		background-color: saturate(darken($bg, 5), 10);
+	}
+}
+
+@mixin font-def($FontPath, $FontName, $FontType:"Regular", $FontVersion:"1.0.0") {
+	src: url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.eot?v=#{$FontVersion}'); /* IE9 Compat Modes */
+	src: url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.eot?#iefix?v=#{$FontVersion}') format('embedded-opentype'), /* IE6-IE8 */
+	url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.woff2?v=#{$FontVersion}') format('woff2'), /* Super Modern Browsers */
+	url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.woff?v=#{$FontVersion}') format('woff'), /* Pretty Modern Browsers */
+	url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.ttf?v=#{$FontVersion}') format('truetype'), /* Safari, Android, iOS */
+	url('#{$FontPath}/#{$FontType}/#{$FontName}-#{$FontType}.svg##{$FontName}#{$FontType}?v=#{$FontVersion}') format('svg'); /* Legacy iOS */
+}
+
+@mixin clearfix() {
+	// Clearfix
+	//
+	// For modern browsers
+	// 1. The space content is one way to avoid an Opera bug when the
+	// contenteditable attribute is included anywhere else in the document.
+	// Otherwise it causes space to appear at the top and bottom of elements
+	// that are clearfixed.
+	// 2. The use of `table` rather than `block` is only necessary if using
+	// `:before` to contain the top-margins of child elements.
+	//
+	// Source http://nicolasgallagher.com/micro-clearfix-hack/
+	zoom: 1;
+	&:before,
+	&:after {
+		display: table; // 2
+
+		content: " "; // 1
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin transition($args...) {
+	transition: $args;
+}
+
+@mixin keyframes($animation-name) {
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str...) {
+	-webkit-animation: $str;
+	-moz-animation: $str;
+	animation: $str;
+}
+
+@mixin make-container() {
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+
+	flex-wrap: wrap;
+	align-items: stretch;
+
+	@include clearfix;
+
+	@media (min-width: $grid-sm-max-container) {
+		max-width: $grid-sm-min-container;
+	}
+	@media (min-width: $grid-md-max-container) {
+		max-width: $grid-md-min-container;
+	}
+	@media (min-width: $grid-lg-max-container) {
+		max-width: $grid-lg-min-container;
+	}
+	@media (min-width: $grid-xlg-max-container) {
+		max-width: $grid-xlg-min-container;
+	}
+}
+
+@mixin make-container-fluid() {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+
+	flex-wrap: wrap;
+	align-items: stretch;
+
+	@include clearfix;
+}
+
+@mixin only-mobile() {
+	@media (max-width: ($grid-sm-width - .0625rem)) {
+		@content;
+	}
+}
+
+@mixin only-tablet() {
+	@media (min-width: $grid-sm-width) and (max-width: ($grid-md-width - .0625rem)) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$grid-sm-width}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$grid-md-width}) {
+		@content;
+	}
+}
+
+@mixin desktop-large() {
+	@media (min-width: #{$grid-lg-width}) {
+		@content;
+	}
+}
+
+@mixin retina {
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+		@content;
+	}
+}
+
+@mixin print {
+	@media print {
+		@content;
+	}
+}
+
+@mixin only-screen-min-and-max($min, $max) {
+	@media (min-width: $min) and (max-width: $max){
+		@content;
+	}
+}
+
+@mixin only-screen-min($min) {
+	@media (min-width: $min){
+		@content;
+	}
+}
+
+@mixin only-screen-max($max) {
+	@media (max-width: $max){
+		@content;
+	}
+}

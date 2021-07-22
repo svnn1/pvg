@@ -1,0 +1,38 @@
+#information {
+	height: 100%;
+
+	background-image: url("https://www.pvg-autocentro.com.br/assets/img/information/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	@include clearfix;
+
+	@include tablet {
+		max-height: 18rem;
+	}
+
+	.overlay {
+		background-color: rgba(0, 0, 0, .7);
+	}
+
+	.info-border {
+		width: 100%;
+		margin: 50px 0;
+		padding: 20px 0;
+
+		border: 1px solid #555555;
+
+		.info-text {
+			text-align: center;
+
+			.info-heading {
+				color: $white;
+
+				> a {
+					color: $red-A700;
+				}
+			}
+		}
+	}
+}

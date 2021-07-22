@@ -1,0 +1,67 @@
+#footer {
+	background-size: cover;
+	background-image: url("https://www.pvg-autocentro.com.br/assets/img/footer/background.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+
+	@include clearfix;
+
+	.overlay {
+		background-color: rgba(0, 0, 0, .7);
+	}
+
+	.footer-header {
+
+		.footer-heading {
+			color: #387BD4;
+			font-size: 1.2rem;
+		}
+	}
+
+	.footer-content {
+		color: $white;
+
+		> h2 {
+			font-size: 1.3rem;
+		}
+
+		> p {
+			span {
+				color: #039BE5;
+			}
+		}
+	}
+
+	.footer-contact {
+		margin-left: -$grid-column-padding;
+		margin-right: -$grid-column-padding;
+
+		.column {
+
+			> label {
+				color: $white;
+			}
+		}
+	}
+
+	> .container-fluid {
+		background-color: #0E0E0E;
+
+		p {
+			color: #8997A5;
+			font-size: .8125rem;
+
+			> span {
+				color: #F4C23D;
+			}
+
+			> a {
+				color: #8997A5;
+
+				&:hover {
+					color: #F4C23D;
+				}
+			}
+		}
+	}
+}

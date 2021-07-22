@@ -1,0 +1,51 @@
+footer#footer
+   .overlay
+      .container
+         .column.twelve.md-six
+            .footer-header
+               h2.footer-heading
+                  | Sobre
+            .footer-content
+               h2 PVG - Centro de assistência, reparação e manutenção
+               p Atuamos no segmento automobilístico, fornecendo peças e serviços há trinta anos.
+               p Comercio de Pneus e Baterias com serviços mecânicos em geral, regulagens, suspensão, balanceamentos e alinhamentos.
+               p Endereço:
+                  span  Av. Fautino Ramalho, 960, Vila Renata, São Paulo
+               p E-mail:
+                  a(href="mailto:modestopvg@gmail.com")  modestopvg@gmail.com
+               p Telefone:
+                  a(href="tel:+55-11-2452-8859")  11 2452-8859
+               p Facebook:
+                  a(href="https://www.facebook.com/pvgautomotivo/" target="_blank")  PVG AUTO CENTRO
+
+         .column.twelve.md-six
+            .footer-header
+               h2.footer-heading
+                  | Envie uma mensagem
+            .footer-contact
+               form(id="form-footer" class="form" action="send-email/footer-contact.php" method="POST")
+                  .columns
+                     .column.twelve.md-six
+                        label(for="name") Nome Completo
+                        input(type="text" id="name" name="name" placeholder="Nome Completo")
+                     .column.twelve.md-six
+                        label(for="email") E-mail
+                        input(type="text" id="email" name="email" placeholder="E-mail")
+                     .column.twelve.md-six
+                        label(for="telephone") Telefone
+                        input(type="tel" id="telephone" name="telephone" placeholder="Telefone")
+                     .column.twelve.md-six
+                        label(for="cellphone") Celular
+                        input(type="tel" id="cellphone" name="cellphone" placeholder="Celular")
+                     .column.twelve
+                        label(for="message") Mensagem
+                        textarea(id="message" name="message" placeholder="Mensagem" rows="3")
+                     .column.twelve
+                        button(class="button raised _primary" type="submit") Enviar
+   .container-fluid
+      p._text-center
+         | Copyrights 2017
+         span  PVG AUTO CENTRO
+         | . Feito por
+         a(target="_blank" href="http://www.svndev.com.br/")
+            |  SvN Developer

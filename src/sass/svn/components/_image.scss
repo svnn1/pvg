@@ -1,0 +1,74 @@
+.image {
+	position: relative;
+
+	display: inline-block;
+
+	max-width: 100%;
+
+	vertical-align: $image-vertical-align;
+
+	background-color: transparent;
+
+	&.responsive {
+		display: block;
+
+		width: 100%;
+		height: auto;
+	}
+
+	&.rounded {
+		border-radius: $image-rounded;
+	}
+
+	&.circular {
+		border-radius: $image-circular;
+	}
+
+	&.mini {
+		width: 2.188rem; // 35px
+		font-size: (round((11 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.tiny {
+		width: 5rem; // 80px
+		font-size: (round((12 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.small {
+		width: 9.375rem; // 150px
+		font-size: (round((13 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.medium {
+		width: 18.75rem; // 300px
+		font-size: (round((14 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.large {
+		width: 28.13rem; // 450px
+		font-size: (round((16 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.big {
+		width: 37.5rem; // 600px
+		font-size: (round((18 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.huge {
+		width: 50rem; // 800px
+		font-size: (round((20 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+
+	&.massive {
+		width: 60rem; // 960px
+		font-size: (round((24 / 16) * 16) / 16) * 1rem;
+		height: auto;
+	}
+}

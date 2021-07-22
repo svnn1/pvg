@@ -1,0 +1,143 @@
+#why-choose-us {
+	@include clearfix;
+
+	.why-choose-us-header {
+		text-align: center;
+
+		.why-choose-us-heading {
+			font-weight: 300;
+
+			&::after {
+				display: block;
+
+				width: 5rem;
+				height: .125rem;
+				margin-top: 1.25rem;
+				margin-right: auto;
+				margin-left: auto;
+
+				content: "";
+
+				background: #1E69B8;
+			}
+		}
+
+		.why-choose-us-description {
+			color: #777777;
+
+			font-size: 1.125rem;
+			font-weight: 300;
+		}
+	}
+
+	.why-choose-header {
+		display: flex;
+		flex-direction: column;
+
+		text-align: center;
+
+		> .why-choose-heading {
+			text-transform: uppercase;
+
+			font-size: 1.125rem;
+			font-weight: 600;
+
+			&::after {
+				display: block;
+
+				width: 5rem;
+				height: .125rem;
+				margin-top: 1.25rem;
+				margin-right: auto;
+				margin-left: auto;
+
+				content: "";
+
+				background: #1E69B8;
+			}
+		}
+
+		> .why-choose-hexagon {
+			position: relative;
+
+			display: flex;
+
+			box-sizing: border-box;
+			width: 7.25rem;
+			height: 4.185625rem;
+			margin: 2.093125rem auto;
+
+			transform: rotate(0.0001deg);
+
+			border-right: solid .125rem #1E69B8;
+			border-left: solid .125rem #1E69B8;
+			background-color: transparent;
+
+			justify-content: center;
+
+			> .icon-chat::before {
+				content: "\3e";
+
+				color: #1E69B8;
+
+				font-size: 3rem;
+			}
+
+			> .icon-wrench-screwdriver::before {
+				content: "\26";
+
+				color: #1E69B8;
+
+				font-size: 3rem;
+			}
+
+			> .icon-truck-tow::before {
+				content: "\66";
+
+				color: #1E69B8;
+
+				font-size: 3rem;
+			}
+
+			&::before {
+				position: absolute;
+				z-index: 1;
+				top: -41.0122px;
+				left: 14.9878px;
+
+				width: 5.12625rem;
+				height: 5.12625rem;
+
+				content: "";
+				transform: scaleY(0.5774) rotate(-45deg);
+
+				border-top: solid .176775rem #1E69B8;
+				border-right: solid .176775rem #1E69B8;
+				background-color: inherit;
+			}
+
+			&::after {
+				position: absolute;
+				z-index: 1;
+				bottom: -41.0122px;
+				left: 14.9878px;
+
+				width: 5.12625rem;
+				height: 5.12625rem;
+
+				content: "";
+				transform: scaleY(0.5774) rotate(-45deg);
+
+				border-bottom: solid .176775rem #1E69B8;
+				border-left: solid .176775rem #1E69B8;
+				background-color: inherit;
+			}
+		}
+	}
+
+	.why-choose-paragraph {
+		text-align: center;
+
+		color: #777777;
+	}
+}

@@ -1,0 +1,181 @@
+.form {
+	position: relative;
+
+	max-width: 100%;
+
+	> p {
+		margin: $paragraph-margin;
+	}
+
+	.column {
+		clear: both;
+		> label {
+			display: block;
+
+			margin: $input-label-margin;
+
+			text-transform: $input-label-text-transform;
+
+			color: $input-label-color;
+
+			font-size: $input-label-font-size;
+			font-weight: $input-label-font-weight;
+		}
+	}
+
+	& textarea,
+	& input:not([type]),
+	& input[type="date"],
+	& input[type="datetime-local"],
+	& input[type="email"],
+	& input[type="number"],
+	& input[type="password"],
+	& input[type="search"],
+	& input[type="tel"],
+	& input[type="time"],
+	& input[type="text"],
+	& input[type="file"],
+	& input[type="url"] {
+		width: 100%;
+
+		vertical-align: top;
+	}
+
+	& ::-webkit-datetime-edit,
+	& ::-webkit-inner-spin-button {
+		height: $input-line-height;
+	}
+
+	& input:not([type]),
+	& input[type="date"],
+	& input[type="datetime-local"],
+	& input[type="email"],
+	& input[type="number"],
+	& input[type="password"],
+	& input[type="search"],
+	& input[type="tel"],
+	& input[type="time"],
+	& input[type="text"],
+	& input[type="file"],
+	& input[type="url"] {
+		margin: 0;
+		padding: $input-padding;
+
+		transition: $input-transition;
+
+		color: $input-color;
+		border: $input-border;
+		border-radius: $input-border-radius;
+		outline: none;
+		background: $input-background;
+		box-shadow: $input-box-shadow;
+
+		font-size: $input-font-size;
+		line-height: $input-line-height;
+
+		-webkit-appearance: none;
+		tap-highlight-color:  rgba(255, 255, 255, 0);
+	}
+
+	& textarea {
+		margin: 0;
+		padding: $input-padding;
+
+		resize: $text-area-resize;
+		transition: $input-transition;
+
+		color: $input-color;
+		border: $input-border;
+		border-radius: $input-border-radius;
+		outline: none;
+		background: $input-background;
+		box-shadow: $input-box-shadow;
+
+		font-size: $input-font-size;
+		line-height: $input-line-height;
+
+		-webkit-appearance: none;
+		tap-highlight-color:  rgba(255, 255, 255, 0);
+	}
+
+	& textarea:not([rows]) {
+		height: $text-area-height;
+		min-height: $text-area-min-height;
+		max-height: $text-area-max-height;
+	}
+
+	& textarea,
+	& input[type="checkbox"] {
+		vertical-align: $checkbox-vertical-align;
+	}
+
+
+	& input.attached {
+		width: auto;
+	}
+
+	& ::-webkit-input-placeholder {
+		color: $input-place-holder-color;
+	}
+	& :-ms-input-placeholder {
+		color: $input-place-holder-color;
+	}
+	& ::-moz-placeholder {
+		color: $input-place-holder-color;
+	}
+
+	& :focus::-webkit-input-placeholder {
+		color: $input-place-holder-focus-color;
+	}
+	& :focus:-ms-input-placeholder {
+		color: $input-place-holder-focus-color;
+	}
+	& :focus::-moz-placeholder {
+		color: $input-place-holder-focus-color;
+	}
+
+	& input:not([type]):focus,
+	& input[type="date"]:focus,
+	& input[type="datetime-local"]:focus,
+	& input[type="email"]:focus,
+	& input[type="number"]:focus,
+	& input[type="password"]:focus,
+	& input[type="search"]:focus,
+	& input[type="tel"]:focus,
+	& input[type="time"]:focus,
+	& input[type="text"]:focus,
+	& input[type="file"]:focus,
+	& input[type="url"]:focus {
+		color: $input-focus-color;
+		border-color: $input-focus-border-color;
+		border-radius: $input-focus-border-radius;
+		background: $input-focus-background;
+		box-shadow: $input-focus-box-shadow;
+	}
+	& textarea:focus {
+		color: $input-focus-color;
+		border-color: $input-focus-border-color;
+		border-radius: $input-focus-border-radius;
+		background: $input-focus-background;
+		box-shadow: $input-focus-box-shadow;
+
+		-webkit-appearance: none;
+	}
+
+	& .disabled.columns .column,
+	& .disabled.column,
+	& .column :disabled {
+		pointer-events: none;
+
+		opacity: 0.45;
+	}
+
+	& .column.disabled > label,
+	& .columns.disabled > label {
+		opacity: 0.45;
+	}
+
+	& .column.disabled :disabled {
+		opacity: 1;
+	}
+}

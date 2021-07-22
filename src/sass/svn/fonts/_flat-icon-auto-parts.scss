@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Auto Parts";
+	src: url("../fonts/icons/flat-icons/auto-parts/Flaticon.eot");
+	src: url("../fonts/icons/flat-icons/auto-parts/Flaticon.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/icons/flat-icons/auto-parts/Flaticon.woff") format("woff"),
+	url("../fonts/icons/flat-icons/auto-parts/Flaticon.ttf") format("truetype"),
+	url("../fonts/icons/flat-icons/auto-parts/Flaticon.svg#Flaticon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: "Auto Parts";
+		src: url("../fonts/icons/flat-icons/auto-parts/Flaticon.svg#Flaticon") format("svg");
+	}
+}
+
+.flat-icon-auto-parts:before{
+	display: inline-block;
+	font-family: "Auto Parts";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-rendering: optimizeLegibility;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}

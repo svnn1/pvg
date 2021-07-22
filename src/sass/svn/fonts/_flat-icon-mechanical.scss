@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Mechanical";
+	src: url("../fonts/icons/flat-icons/mechanical/Flaticon.eot");
+	src: url("../fonts/icons/flat-icons/mechanical/Flaticon.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/icons/flat-icons/mechanical/Flaticon.woff") format("woff"),
+	url("../fonts/icons/flat-icons/mechanical/Flaticon.ttf") format("truetype"),
+	url("../fonts/icons/flat-icons/mechanical/Flaticon.svg#Flaticon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: "Mechanical";
+		src: url("../fonts/icons/flat-icons/mechanical/Flaticon.svg#Flaticon") format("svg");
+	}
+}
+
+.flat-icon-mechanical:before{
+	display: inline-block;
+	font-family: "Mechanical";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-rendering: optimizeLegibility;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}

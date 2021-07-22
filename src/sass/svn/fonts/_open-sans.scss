@@ -1,0 +1,47 @@
+/* BEGIN Light */
+@font-face {
+	font-family: 'Open Sans';
+	@include font-def($font-open-sans-path, $font-open-sans, "Light");
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+	font-family: 'Open Sans';
+	@include font-def($font-open-sans-path, $font-open-sans, 'LightItalic');
+	font-weight: 100;
+	font-style: italic;
+}
+
+/* Regular */
+@font-face {
+	font-family: 'Open Sans';
+	@include font-def($font-open-sans-path, $font-open-sans);
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Italic */
+@font-face {
+	font-family: 'Open Sans';
+	@include font-def($font-open-sans-path, $font-open-sans, 'Italic');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* Bold */
+@font-face {
+	font-family: 'Open Sans';
+	@include font-def($font-open-sans-path, $font-open-sans, 'Bold');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+	font-family: 'Open Sans';
+	@include font-def($font-open-sans-path, $font-open-sans, 'BoldItalic');
+	font-weight: bold;
+	font-style: italic;
+}

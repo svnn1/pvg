@@ -1,0 +1,274 @@
+.container {
+	@include make-container;
+
+	&-fluid {
+		@include make-container-fluid;
+	}
+}
+
+.columns {
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.column {
+	display: block;
+
+	max-width: 100%;
+	padding: $grid-column-padding;
+
+	flex: 0 0 auto;
+
+	&.one {
+		width: 8.333333333333333%;
+
+		flex-basis: 8.333333333333333%;
+	}
+	&.two {
+		width: 16.66666666666667%;
+
+		flex-basis: 16.66666666666667%;
+	}
+	&.three {
+		width: 25%;
+
+		flex-basis: 25%;
+	}
+	&.four {
+		width: 33.333333333333333%;
+
+		flex-basis: 33.333333333333333%;
+	}
+	&.five {
+		width: 41.66666666666667%;
+
+		flex-basis: 41.66666666666667%;
+	}
+	&.six {
+		width: 50%;
+
+		flex-basis: 50%;
+	}
+	&.seven {
+		width: 58.333333333333333%;
+
+		flex-basis: 58.333333333333333%;
+	}
+	&.eight {
+		width: 66.66666666666667%;
+
+		flex-basis: 66.66666666666667%;
+	}
+	&.nine {
+		width: 75%;
+
+		flex-basis:  75%;
+	}
+	&.ten {
+		width: 83.333333333333333%;
+
+		flex-basis: 83.333333333333333%;
+	}
+	&.eleven {
+		width: 91.66666666666667%;
+
+		flex-basis: 91.66666666666667%;
+	}
+	&.twelve {
+		width: 100%;
+
+		flex-basis: 100%;
+	}
+
+	@include tablet {
+		&.sm-one {
+			width: 8.333333333333333%;
+
+			flex-basis: 8.333333333333333%;
+		}
+		&.sm-two {
+			width: 16.66666666666667%;
+
+			flex-basis: 16.66666666666667%;
+		}
+		&.sm-three {
+			width: 25%;
+
+			flex-basis: 25%;
+		}
+		&.sm-four {
+			width: 33.333333333333333%;
+
+			flex-basis: 33.333333333333333%;
+		}
+		&.sm-five {
+			width: 41.66666666666667%;
+
+			flex-basis: 41.66666666666667%;
+		}
+		&.sm-six {
+			width: 50%;
+
+			flex-basis: 50%;
+		}
+		&.sm-seven {
+			width: 58.333333333333333%;
+
+			flex-basis: 58.333333333333333%;
+		}
+		&.sm-eight {
+			width: 66.66666666666667%;
+
+			flex-basis: 66.66666666666667%;
+		}
+		&.sm-nine {
+			width: 75%;
+
+			flex-basis: 75%;
+		}
+		&.sm-ten {
+			width: 83.333333333333333%;
+
+			flex-basis:  83.333333333333333%;
+		}
+		&.sm-eleven {
+			width: 91.66666666666667%;
+
+			flex-basis: 91.66666666666667%;
+		}
+		&.sm-twelve {
+			width: 100%;
+
+			flex-basis: 100%;
+		}
+	}
+	@include desktop {
+		&.md-one {
+			width: 8.333333333333333%;
+
+			flex-basis: 8.333333333333333%;
+		}
+		&.md-two {
+			width: 16.66666666666667%;
+
+			flex-basis: 16.66666666666667%;
+		}
+		&.md-three {
+			width: 25%;
+
+			flex-basis: 25%;
+		}
+		&.md-four {
+			width: 33.333333333333333%;
+
+			flex-basis: 33.333333333333333%;
+		}
+		&.md-five {
+			width: 41.66666666666667%;
+
+			flex-basis: 41.66666666666667%;
+		}
+		&.md-six {
+			width: 50%;
+
+			flex-basis: 50%;
+		}
+		&.md-seven {
+			width: 58.333333333333333%;
+
+			flex-basis: 58.333333333333333%;
+		}
+		&.md-eight {
+			width: 66.66666666666667%;
+
+			flex-basis: 66.66666666666667%;
+		}
+		&.md-nine {
+			width: 75%;
+
+			flex-basis: 75%;
+		}
+		&.md-ten {
+			width: 83.333333333333333%;
+
+			flex-basis:  83.333333333333333%;
+		}
+		&.md-eleven {
+			width: 91.66666666666667%;
+
+			flex-basis: 91.66666666666667%;
+		}
+		&.md-twelve {
+			width: 100%;
+
+			flex-basis: 100%;
+		}
+	}
+	@include desktop-large {
+		&.lg-one {
+			width: 8.333333333333333%;
+
+			flex-basis: 8.333333333333333%;
+		}
+		&.lg-two {
+			width: 16.66666666666667%;
+
+			flex-basis: 16.66666666666667%;
+		}
+		&.lg-three {
+			width: 25%;
+
+			flex-basis: 25%;
+		}
+		&.lg-four {
+			width: 33.333333333333333%;
+
+			flex-basis: 33.333333333333333%;
+		}
+		&.lg-five {
+			width: 41.66666666666667%;
+
+			flex-basis: 41.66666666666667%;
+		}
+		&.lg-six {
+			width: 50%;
+
+			flex-basis: 50%;
+		}
+		&.lg-seven {
+			width: 58.333333333333333%;
+
+			flex-basis: 58.333333333333333%;
+		}
+		&.lg-eight {
+			width: 66.66666666666667%;
+
+			flex-basis: 66.66666666666667%;
+		}
+		&.lg-nine {
+			width: 75%;
+
+			flex-basis: 75%;
+		}
+		&.lg-ten {
+			width: 83.333333333333333%;
+
+			flex-basis:  83.333333333333333%;
+		}
+		&.lg-eleven {
+			width: 91.66666666666667%;
+
+			flex-basis: 91.66666666666667%;
+		}
+		&.lg-twelve {
+			width: 100%;
+
+			flex-basis: 100%;
+		}
+	}
+}

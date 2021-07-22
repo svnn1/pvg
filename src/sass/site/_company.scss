@@ -1,0 +1,165 @@
+#company {
+	@include clearfix;
+
+	.company-header {
+		text-align: center;
+
+		.company-heading {
+			font-weight: 300;
+
+			&::after {
+				display: block;
+
+				width: 5rem;
+				height: .125rem;
+				margin-top: 1.25rem;
+				margin-right: auto;
+				margin-left: auto;
+
+				content: "";
+
+				background: #1E69B8;
+			}
+		}
+
+		.company-description {
+			color: #777777;
+
+			font-size: 1.125rem;
+			font-weight: 300;
+		}
+	}
+
+	.company-content {
+		width: 100%;
+
+		.content-header {
+
+			.content-heading {
+				text-transform: uppercase;
+
+				font-size: 1.0625rem;
+				font-weight: 600;
+			}
+		}
+
+		.content-description {
+			display: flex;
+
+			> .icon {
+				margin-right: 1.25rem;
+
+				font-size: 3rem;
+
+				align-self: flex-start;
+
+				.icon-car-audio::before {
+					content: "\4b";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-oil::before {
+					content: "\70";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-signal-warning::before {
+					content: "\38";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-air-conditioning::before {
+					content: "\40";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-parking-sensor::before {
+					content: "\4f";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-battery::before {
+					content: "\61";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-checklist::before {
+					content: "\6d";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-setting::before {
+					content: "\73";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-chassis::before {
+					content: "\f107";
+
+					color: #1E69B8;
+				}
+				.icon-car-suspension::before {
+					content: "\f121";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-wheel::before {
+					content: "\f125";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-steering-wheel::before {
+					content: "\f120";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-exhaust-pipe::before {
+					content: "\f10e";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-disc-brake::before {
+					content: "\f102";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-pedals::before {
+					content: "\f118";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-timing-belt::before {
+					content: "\f109";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-spark-plug::before {
+					content: "\f106";
+
+					color: #1E69B8;
+				}
+
+				.icon-car-headlights::before {
+					content: "\f103";
+
+					color: #1E69B8;
+				}
+			}
+		}
+	}
+}

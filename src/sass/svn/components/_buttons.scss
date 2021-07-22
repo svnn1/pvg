@@ -1,0 +1,69 @@
+.button {
+	position: relative;
+
+	display: inline-block;
+	overflow: hidden;
+
+	height: $button-height;
+	margin-top: $button-margin;
+	margin-bottom: $button-margin;
+	padding: $button-padding;
+
+	cursor: $cursor-pointer;
+	user-select: none;
+	transition: $button-transition;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: $black;
+	border: none;
+	background-color: $white;
+	background-image: none;
+
+	font-size: $button-font-size;
+	font-weight: 500;
+	line-height: $button-line-height;
+
+	touch-action: manipulation;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&.raised {
+		box-shadow: $button-box-shadow;
+		&:active {
+			box-shadow: $button-box-shadow-active;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+
+		color: $black;
+		outline: 0;
+		background-color: lighten($white, 5%);
+	}
+
+	&:hover,
+	&:focus {
+		box-shadow: $button-box-shadow;
+	}
+
+	&:active:hover {
+		box-shadow: $button-box-shadow-active;
+	}
+
+	&:disabled {
+		cursor: $cursor-disabled;
+		pointer-events: none;
+
+		opacity: 0.60;
+		box-shadow: none;
+	}
+}

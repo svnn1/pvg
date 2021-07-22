@@ -1,0 +1,34 @@
+#interested {
+	height: 100%;
+
+	background-image:  url("https://www.pvg-autocentro.com.br/assets/img/interested-services/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	@include clearfix;
+
+	@include tablet {
+		max-height: 18rem;
+	}
+
+	.overlay {
+		background-color: rgba(0, 0, 0, .7);
+	}
+
+	.interested-service {
+		width: 100%;
+		margin: 50px 0;
+		padding: 20px 0;
+
+		.interested-heading {
+			text-align: center;
+
+			color: $white;
+
+			> span {
+				color: $red-A700;
+			}
+		}
+	}
+}
